@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:identiverse/nav.dart';
 
 import 'Splashscreen.dart';
 
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
      //home: UserInfo(),
      //home: SignUpScreen(),
      //home: ImageUploader(),
-     home: Splashscreen(),
+    // home: Splashscreen(),
+    home: NavigationBarPage(),
      //home: CountriesList(),
     // home: SignUp(),
     );
