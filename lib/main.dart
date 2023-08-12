@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:identiverse/nav.dart';
 
+//import 'Splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,7 +9,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
 
   @override
   Widget build(BuildContext context) {
@@ -19,19 +19,15 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primarySwatch: Colors.blue,
       ),
-     // home: Homepage()
-     //home: CustomModel(),
-     //home: UserInfo(),
-     //home: SignUpScreen(),
-     //home: ImageUploader(),
-    // home: Splashscreen(),
-    home: const NavigationBarPage(),
-     //home: CountriesList(),
-    // home: SignUp(),
+      // home: Homepage()
+      //home: CustomModel(),
+      //home: UserInfo(),
+      //home: SignUpScreen(),
+      //home: ImageUploader(),
+      // home: Splashscreen(),
+      home: const NavigationBarPage(),
+      //home: CountriesList(),
+      // home: SignUp(),
     );
   }
 }
-
-
-
-
