@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:identiverse/nav.dart';
 
-import 'Splashscreen.dart';
+//import 'Splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
