@@ -24,10 +24,10 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
+                const Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 24),
+                      padding: EdgeInsets.only(right: 24),
                       child: Text(
                         'Store your',
                         style: TextStyle(
@@ -57,9 +57,9 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
                     height: 40,
                     width: 40,
                     decoration: BoxDecoration(
-                        color: Color(0xFFEFEFEF),
+                        color: const Color(0xFFEFEFEF),
                         borderRadius: BorderRadius.circular(4)),
-                    child: Icon(
+                    child: const Icon(
                       Icons.menu_rounded,
                       color: Color(0xFF2B2B2B),
                     ),
@@ -67,25 +67,25 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
-            Row(
+            const Row(
               children: [
                 AadhaarCard(),
                 SizedBox(width: 24),
                 Pancard(),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Passport(),
-            SizedBox(
+            const Passport(),
+            const SizedBox(
               height: 40,
             ),
 
-            UniqueID()
+            const UniqueID()
 
           ],
         ),

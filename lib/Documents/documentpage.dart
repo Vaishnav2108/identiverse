@@ -10,6 +10,6 @@ class DocPage extends StatefulWidget {
 class _DocPageState extends State<DocPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

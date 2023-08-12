@@ -20,12 +20,12 @@ class _UniqueIDState extends State<UniqueID> {
           height: 70,
           padding: const EdgeInsets.all(16),
           decoration: ShapeDecoration(
-            color: Color(0xFF046A38),
+            color: const Color(0xFF046A38),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),
           ),
-          child: Row(
+          child: const Row(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,

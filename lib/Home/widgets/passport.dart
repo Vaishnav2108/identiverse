@@ -21,7 +21,7 @@ class _PassportState extends State<Passport> {
       height: 165,
       padding: const EdgeInsets.all(16),
       decoration: ShapeDecoration(
-      color: Color(0xFFEFEFEF),
+      color: const Color(0xFFEFEFEF),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
       ),
@@ -31,13 +31,13 @@ class _PassportState extends State<Passport> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Container(
+        SizedBox(
           width: 90,
           height: 102,
          child: Image.asset('images/passport.png'),
         ),
         const SizedBox(height: 8),
-        Text(
+        const Text(
           'Passport',
           style: TextStyle(
             color: Color(0xFF2B2B2B),

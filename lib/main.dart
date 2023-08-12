@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:identiverse/nav.dart';
 
-import 'Splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
      //home: SignUpScreen(),
      //home: ImageUploader(),
     // home: Splashscreen(),
-    home: NavigationBarPage(),
+    home: const NavigationBarPage(),
      //home: CountriesList(),
     // home: SignUp(),
     );

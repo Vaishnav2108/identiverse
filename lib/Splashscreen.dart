@@ -18,7 +18,7 @@ class _SplashscreenState extends State<Splashscreen> {
       debugShowCheckedModeBanner: false,
         home: AnimatedSplashScreen(
             splash: Image.asset('images/Identiverse splash screen.png',height: 400,width: 300,),
-            nextScreen: LoginPage(),
+            nextScreen: const LoginPage(),
             splashTransition: SplashTransition.fadeTransition,
             ));
   }

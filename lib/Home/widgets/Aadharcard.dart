@@ -23,7 +23,7 @@ class _AadhaarCardState extends State<AadhaarCard> {
         height: 150,
         padding: const EdgeInsets.all(16),
         decoration: ShapeDecoration(
-          color: Color(0xFFEFEFEF),
+          color: const Color(0xFFEFEFEF),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
@@ -33,13 +33,13 @@ class _AadhaarCardState extends State<AadhaarCard> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               width: 120,
               height: 85,
               child: Image.asset('images/Aadhar_card.png'),
             ),
             const SizedBox(height: 8),
-            Text(
+            const Text(
               'Aadhaar Card',
               style: TextStyle(
                 color: Color(0xFF2B2B2B),

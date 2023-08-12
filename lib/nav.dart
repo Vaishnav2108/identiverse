@@ -18,19 +18,19 @@ class NavigationBarPage extends StatefulWidget {
 class _NavigationBarPageState extends State<NavigationBarPage> {
   int index = 0;
 
-  List<Widget> _index = [
-    HomeScreenPage(),
-    DocPage(),
-    MyProfile()
+  final List<Widget> _index = [
+    const HomeScreenPage(),
+    const DocPage(),
+    const MyProfile()
 
     // Homepage(),
     // NotificationPage(),
     // AttendancePage(),
   ];
 
-  void updatePage(int _index) {
+  void updatePage(int index) {
     setState(() {
-      index = _index;
+      index = index;
     });
   }
 
@@ -41,16 +41,16 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
       bottomNavigationBar: SizedBox(
         height: 70,
         child: BottomNavigationBar(
-          selectedItemColor: Color(0xFF2B2B2B),
-          unselectedItemColor: Color(0xFF2B2B2B),
-          backgroundColor: Color(0xFFEFEFEF),
+          selectedItemColor: const Color(0xFF2B2B2B),
+          unselectedItemColor: const Color(0xFF2B2B2B),
+          backgroundColor: const Color(0xFFEFEFEF),
           // selectedItemColor: Gcolors.primaryColor400,
           // backgroundColor: Gcolors.neutralColor1000,
           // unselectedItemColor: Gcolors.primaryColor050,
-          selectedLabelStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-          unselectedLabelStyle: TextStyle(fontSize: 14),
-          selectedIconTheme: IconThemeData(size: 30),
-          unselectedIconTheme: IconThemeData(size: 26),
+          selectedLabelStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          unselectedLabelStyle: const TextStyle(fontSize: 14),
+          selectedIconTheme: const IconThemeData(size: 30),
+          unselectedIconTheme: const IconThemeData(size: 26),
           type: BottomNavigationBarType.fixed,
       
           currentIndex: index,
@@ -60,7 +60,7 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
           //     indicatorColor: Gcolors.primaryColor400,
           //     labelTextStyle: MaterialStateProperty.all(
           //         TextStyle(fontSize: 13, color: Gcolors.primaryColor050))),
-          items: [
+          items: const [
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,

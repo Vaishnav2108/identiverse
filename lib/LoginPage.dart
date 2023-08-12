@@ -17,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
   width: 390,
   height: 844,
   clipBehavior: Clip.antiAlias,
-  decoration: BoxDecoration(color: Colors.white),
+  decoration: const BoxDecoration(color: Colors.white),
   child: Padding(
     padding: const EdgeInsets.only(left: 28.0, top: 100),
     child: Column(
@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
       children: [
         
         
-          Text(
+          const Text(
             'Login',
             style: TextStyle(
               color: Color(0xFF2B2B2B),
@@ -35,7 +35,7 @@ class _LoginPageState extends State<LoginPage> {
               fontWeight: FontWeight.w700,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 41,
           ),
         
@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   'Select wallet',
                   style: TextStyle(
                     color: Color(0xFF2B2B2B),
@@ -59,15 +59,15 @@ class _LoginPageState extends State<LoginPage> {
                   width: 24,
                   height: 24,
                   clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(),
-                  child: Icon(Icons.arrow_forward_ios)
+                  decoration: const BoxDecoration(),
+                  child: const Icon(Icons.arrow_forward_ios)
                   
                   
                 ),
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
         
@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Container(
               padding: const EdgeInsets.all(20),
               decoration: ShapeDecoration(
-                color: Color(0xFFEFEFEF),
+                color: const Color(0xFFEFEFEF),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
@@ -91,13 +91,13 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
+                  SizedBox(
                     width: 100,
                     height: 100,
                     child: Image.asset('images/Metamask Logo.png'),
                   ),
                   const SizedBox(height: 8),
-                  Text(
+                  const Text(
                     'Metamask',
                     style: TextStyle(
                       color: Color(0xFF1A1414),
