@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:identiverse/LoginPage.dart';
 
 class MyProfile extends StatefulWidget {
   const MyProfile({super.key});
@@ -10,6 +11,6 @@ class MyProfile extends StatefulWidget {
 class _MyProfileState extends State<MyProfile> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold();
   }
 }

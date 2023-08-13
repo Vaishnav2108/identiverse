@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:identiverse/Home/Aadhaardetails/Userverification.dart';
+//import 'package:identiverse/LoginPage.dart';
 
 class AadhaarCard extends StatefulWidget {
   const AadhaarCard({
@@ -15,7 +17,7 @@ class _AadhaarCardState extends State<AadhaarCard> {
     return InkWell(
       onTap: () {
         setState(() {
-          
+          Navigator.push(context, MaterialPageRoute(builder: (context) => UserIdVerification()));
         });
       },
       child: Container(
