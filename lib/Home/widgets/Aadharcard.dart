@@ -17,7 +17,7 @@ class _AadhaarCardState extends State<AadhaarCard> {
     return InkWell(
       onTap: () {
         setState(() {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => UserIdVerification()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => const UserIdVerification()));
         });
       },
       child: Container(

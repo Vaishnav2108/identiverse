@@ -21,12 +21,12 @@ class _UserIdVerificationState extends State<UserIdVerification> {
             // SizedBox(
             //   height: 40,
             // ),
-             Container(
+             const SizedBox(
               width: 414,
               height: 56,
               
               child: Padding(
-                padding: const EdgeInsets.only(left: 16.0),
+                padding: EdgeInsets.only(left: 16.0),
                 child: Text(
                   'Welcome Back!',
                   //textAlign: TextAlign.left,
@@ -38,19 +38,19 @@ class _UserIdVerificationState extends State<UserIdVerification> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 15.0),
-              child: Container(
+              child: SizedBox(
                 width: 500,
                 child: TextFormField(
                   decoration: InputDecoration(
                       labelText: "Email I'd",
-                      labelStyle: TextStyle(color: Color(0xFF046A38)),
+                      labelStyle: const TextStyle(color: Color(0xFF046A38)),
                       hintText: "Enter your Email I'd",
-                      hintStyle: TextStyle(color: Color(0xFF046A38)),
+                      hintStyle: const TextStyle(color: Color(0xFF046A38)),
                       fillColor: Colors.grey.shade400,
                       
                       filled: true,
@@ -59,7 +59,7 @@ class _UserIdVerificationState extends State<UserIdVerification> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             // Padding(

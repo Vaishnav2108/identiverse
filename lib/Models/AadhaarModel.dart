@@ -6,13 +6,13 @@ class AadhaarModelTest {
   AadhaarModelTest(
       {String? name, AadharDetails? aadharDetails, Contact? contact}) {
     if (name != null) {
-      this._name = name;
+      _name = name;
     }
     if (aadharDetails != null) {
-      this._aadharDetails = aadharDetails;
+      _aadharDetails = aadharDetails;
     }
     if (contact != null) {
-      this._contact = contact;
+      _contact = contact;
     }
   }
 
@@ -27,20 +27,20 @@ class AadhaarModelTest {
   AadhaarModelTest.fromJson(Map<String, dynamic> json) {
     _name = json['Name'];
     _aadharDetails = json['Aadhar_Details'] != null
-        ? new AadharDetails.fromJson(json['Aadhar_Details'])
+        ? AadharDetails.fromJson(json['Aadhar_Details'])
         : null;
     _contact =
-        json['Contact'] != null ? new Contact.fromJson(json['Contact']) : null;
+        json['Contact'] != null ? Contact.fromJson(json['Contact']) : null;
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['Name'] = this._name;
-    if (this._aadharDetails != null) {
-      data['Aadhar_Details'] = this._aadharDetails!.toJson();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['Name'] = _name;
+    if (_aadharDetails != null) {
+      data['Aadhar_Details'] = _aadharDetails!.toJson();
     }
-    if (this._contact != null) {
-      data['Contact'] = this._contact!.toJson();
+    if (_contact != null) {
+      data['Contact'] = _contact!.toJson();
     }
     return data;
   }
@@ -53,13 +53,13 @@ class AadharDetails {
 
   AadharDetails({String? dOB, String? sex, Address? address}) {
     if (dOB != null) {
-      this._dOB = dOB;
+      _dOB = dOB;
     }
     if (sex != null) {
-      this._sex = sex;
+      _sex = sex;
     }
     if (address != null) {
-      this._address = address;
+      _address = address;
     }
   }
 
@@ -74,15 +74,15 @@ class AadharDetails {
     _dOB = json['DOB'];
     _sex = json['Sex'];
     _address =
-        json['Address'] != null ? new Address.fromJson(json['Address']) : null;
+        json['Address'] != null ? Address.fromJson(json['Address']) : null;
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['DOB'] = this._dOB;
-    data['Sex'] = this._sex;
-    if (this._address != null) {
-      data['Address'] = this._address!.toJson();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['DOB'] = _dOB;
+    data['Sex'] = _sex;
+    if (_address != null) {
+      data['Address'] = _address!.toJson();
     }
     return data;
   }
@@ -96,16 +96,16 @@ class Address {
 
   Address({String? father, String? houseNo, String? address, int? pin}) {
     if (father != null) {
-      this._father = father;
+      _father = father;
     }
     if (houseNo != null) {
-      this._houseNo = houseNo;
+      _houseNo = houseNo;
     }
     if (address != null) {
-      this._address = address;
+      _address = address;
     }
     if (pin != null) {
-      this._pin = pin;
+      _pin = pin;
     }
   }
 
@@ -126,11 +126,11 @@ class Address {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['Father'] = this._father;
-    data['House_No'] = this._houseNo;
-    data['Address'] = this._address;
-    data['Pin'] = this._pin;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['Father'] = _father;
+    data['House_No'] = _houseNo;
+    data['Address'] = _address;
+    data['Pin'] = _pin;
     return data;
   }
 }
@@ -141,10 +141,10 @@ class Contact {
 
   Contact({int? phoneNumber, String? email}) {
     if (phoneNumber != null) {
-      this._phoneNumber = phoneNumber;
+      _phoneNumber = phoneNumber;
     }
     if (email != null) {
-      this._email = email;
+      _email = email;
     }
   }
 
@@ -159,9 +159,9 @@ class Contact {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['Phone Number'] = this._phoneNumber;
-    data['Email'] = this._email;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['Phone Number'] = _phoneNumber;
+    data['Email'] = _email;
     return data;
   }
 }
