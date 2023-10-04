@@ -1,16 +1,17 @@
 # identiverse
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+Identiverse is a DApp(Decentralised Application) where a user can verify and store his/her government documents and generate a UUID(Universal Unique ID) for himself/herself so as to use any online services or applications. It is also a an alternative to Google/Facebook for authentication to use any online platform.
 
-This project is a starting point for a Flutter application.
+## Implementatioon
 
-A few resources to get you started if this is your first Flutter project:
+We used Flutter to build our frontend . MongoDB and NodeJS to build the backend . We used the Hedara hashgraph technology to decentralise the app and Solidity to build the contracts.  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Technical Components
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Frontend : Flutter 
+- Backend : NodeJS,MongoDB
+- Web3 : Hedara Hashgraph, Solidity
+- Other technologies : REST APIs
+
